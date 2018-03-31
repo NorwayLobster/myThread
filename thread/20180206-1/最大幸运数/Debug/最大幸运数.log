@@ -1,0 +1,8 @@
+﻿  main.c
+e:\code_22\20180206\最大幸运数\main.c(9): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 参见“scanf”的声明
+e:\code_22\20180206\最大幸运数\main.c(13): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 参见“scanf”的声明
+e:\code_22\20180206\最大幸运数\main.c(19): warning C4554: “^”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+e:\code_22\20180206\最大幸运数\main.c(25): warning C4554: “^”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+  最大幸运数.vcxproj -> E:\CODE_22\20180206\Debug\最大幸运数.exe

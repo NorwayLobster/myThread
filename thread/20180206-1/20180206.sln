@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "最大幸运数", "最大幸运数\最大幸运数.vcxproj", "{1E3B08A5-D9A5-463F-B3E3-6BDEBEE3E2EA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "贪心", "贪心\贪心.vcxproj", "{394CCC83-57A1-4ECC-AB33-A8B6185323FF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "B树", "B树\B树.vcxproj", "{7DEA6FD7-59FF-4DCA-8E65-822D78D81A1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E3B08A5-D9A5-463F-B3E3-6BDEBEE3E2EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E3B08A5-D9A5-463F-B3E3-6BDEBEE3E2EA}.Debug|Win32.Build.0 = Debug|Win32
+		{1E3B08A5-D9A5-463F-B3E3-6BDEBEE3E2EA}.Release|Win32.ActiveCfg = Release|Win32
+		{1E3B08A5-D9A5-463F-B3E3-6BDEBEE3E2EA}.Release|Win32.Build.0 = Release|Win32
+		{394CCC83-57A1-4ECC-AB33-A8B6185323FF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{394CCC83-57A1-4ECC-AB33-A8B6185323FF}.Debug|Win32.Build.0 = Debug|Win32
+		{394CCC83-57A1-4ECC-AB33-A8B6185323FF}.Release|Win32.ActiveCfg = Release|Win32
+		{394CCC83-57A1-4ECC-AB33-A8B6185323FF}.Release|Win32.Build.0 = Release|Win32
+		{7DEA6FD7-59FF-4DCA-8E65-822D78D81A1C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7DEA6FD7-59FF-4DCA-8E65-822D78D81A1C}.Debug|Win32.Build.0 = Debug|Win32
+		{7DEA6FD7-59FF-4DCA-8E65-822D78D81A1C}.Release|Win32.ActiveCfg = Release|Win32
+		{7DEA6FD7-59FF-4DCA-8E65-822D78D81A1C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
