@@ -13,9 +13,11 @@ void* thread_func(void *p)
 	bzero(&abstime,sizeof(abstime));
 	abstime.tv_sec=time(NULL)+5;
 	printf("I am thread1,I will wait\n");
+
 	pthread_mutex_lock(&t->mutex);
 	ret=pthread_cond_timedwait(&t->cond,&t->mutex,&abstime);
 	pthread_mutex_unlock(&t->mutex);
+	
 	printf("I am thread1,I wakeup,ret=%d\n",ret);
 	pthread_exit(NULL);
 }

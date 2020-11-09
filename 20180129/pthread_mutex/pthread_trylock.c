@@ -10,7 +10,7 @@ typedef struct{
 void* thread_func(void *p)
 {
 	data *t=(data*)p;
-//	pthread_mutex_lock(&t->mutex);
+	pthread_mutex_lock(&t->mutex);
 	while(1);
 	pthread_exit(NULL);
 }

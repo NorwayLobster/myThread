@@ -7,15 +7,17 @@ void* th_func(void* p)
 	pnode_t pcur;
 	while(1)
 	{
-		pthread_mutex_lock(&que->mutex);
+		pthread_mutex_lock(&que->mutex);//去业务队列里拿业务,业务队列是一个临界资源,
+										//	而且在业务队列里面,有时候,业务为空,所以,要使用条件变量,业务为空时,在业务线程阻塞在条件变量上;当业务来时,唤醒 业务线程
 		if(0==que->que_size)
 		{
 			pthread_cond_wait(&pf->cond,&que->mutex);
 		}
 		que_get(que,&pcur);
 		pthread_mutex_unlock(&que->mutex);
-		trans_file(pcur->new_fd);		
-		free(pcur);
+		trans_file(pcur->new_fd);//真正的做任务的函数		
+		free(pcur);//不在que_get里面使用free()释放堆内存,原因,free()和malloc(),一样都是很耗时间的函数调用,故放在加解锁的外面,减少锁住的状态的持续时间
+		//以提高并发性
 	}
 }
 

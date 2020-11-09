@@ -12,9 +12,11 @@ void* thread_func(void *p)
 	int i=t->flag;
 	int ret;
 	printf("I am thread%d,I will wait\n",i);
+
 	pthread_mutex_lock(&t->mutex);
 	ret=pthread_cond_wait(&t->cond,&t->mutex);
 	pthread_mutex_unlock(&t->mutex);
+
 	printf("I am thread%d,I wakeup,ret=%d\n",i,ret);
 	pthread_exit(NULL);
 }
