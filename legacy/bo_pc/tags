@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC := g++$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS := -std=c++11 -g -Wno-deprecated$/;"	m
+CPP_FILE	Makefile	/^CPP_FILE :=  $(wildcard *.cc)$/;"	m
+Condition	Condition.h	/^	Condition(MutexLock & mutex)$/;"	f	class:wd::Condition
+Condition	Condition.h	/^class Condition$/;"	c	namespace:wd
+Consumer	TestThread.cc	/^struct Consumer{$/;"	s	file:
+INC_DIR	Makefile	/^INC_DIR :=  .\/$/;"	m
+INC_FILE	Makefile	/^INC_FILE := $(addprefix -I, $(INC_DIR))$/;"	m
+LIBS	Makefile	/^LIBS :=  -lpthread$/;"	m
+MutexLock	MutexLock.h	/^	MutexLock()$/;"	f	class:wd::MutexLock
+MutexLock	MutexLock.h	/^class MutexLock$/;"	c	namespace:wd
+MutexLockGuard	MutexLock.h	/^	MutexLockGuard(MutexLock & mutex)$/;"	f	class:wd::MutexLockGuard
+MutexLockGuard	MutexLock.h	/^class MutexLockGuard$/;"	c	namespace:wd
+Noncopyable	Noncopyable.h	/^	Noncopyable(){}$/;"	f	class:wd::Noncopyable
+Noncopyable	Noncopyable.h	/^class Noncopyable$/;"	c	namespace:wd
+Producer	TestThread.cc	/^struct Producer{$/;"	s	file:
+SRC_DIR	Makefile	/^SRC_DIR = .\/$/;"	m
+TARGET	Makefile	/^TARGET := a.out$/;"	m
+Task	TaskQueue.h	/^typedef int Task;$/;"	t	namespace:wd
+TaskQueue	TaskQueue.h	/^	TaskQueue(size_t queSize)$/;"	f	class:wd::TaskQueue
+TaskQueue	TaskQueue.h	/^class TaskQueue$/;"	c	namespace:wd
+Thread	Thread.cc	/^Thread::Thread(ThreadCallback && cb)$/;"	f	class:Thread
+Thread	Thread.h	/^class Thread$/;"	c	namespace:wd
+__WD_CONDITION_H__	Condition.h	9;"	d
+__WD_MUTEXLOCK_H__	MutexLock.h	8;"	d
+__WD_NONCOPYABLE_H__	Noncopyable.h	8;"	d
+__WD_TASKQUEUE_H__	TaskQueue.h	9;"	d
+__WD_THREAD_H__	Thread.h	8;"	d
+_cb	Thread.h	/^	ThreadCallback _cb;$/;"	m	class:wd::Thread
+_cond	Condition.h	/^	pthread_cond_t _cond;$/;"	m	class:wd::Condition
+_isRunning	Thread.h	/^	bool _isRunning;$/;"	m	class:wd::Thread
+_mutex	Condition.h	/^	MutexLock & _mutex;$/;"	m	class:wd::Condition
+_mutex	MutexLock.h	/^	MutexLock & _mutex;$/;"	m	class:wd::MutexLockGuard
+_mutex	MutexLock.h	/^	pthread_mutex_t _mutex;$/;"	m	class:wd::MutexLock
+_mutex	TaskQueue.h	/^	MutexLock _mutex;$/;"	m	class:wd::TaskQueue
+_notEmpty	TaskQueue.h	/^	Condition _notEmpty;$/;"	m	class:wd::TaskQueue
+_notFull	TaskQueue.h	/^	Condition _notFull;$/;"	m	class:wd::TaskQueue
+_pthid	Thread.h	/^	pthread_t _pthid;$/;"	m	class:wd::Thread
+_que	TaskQueue.h	/^	std::queue<Task> _que;$/;"	m	class:wd::TaskQueue
+_queSize	TaskQueue.h	/^	size_t _queSize;$/;"	m	class:wd::TaskQueue
+consume	TestThread.cc	/^void consume(TaskQueue & tq) {$/;"	f
+consumeNumber	TestThread.cc	/^	void consumeNumber(TaskQueue & tq) {$/;"	f	struct:Consumer
+empty	TaskQueue.h	/^	bool empty() const$/;"	f	class:wd::TaskQueue
+full	TaskQueue.h	/^	bool full()const$/;"	f	class:wd::TaskQueue
+getMutexLockPtr	MutexLock.h	/^	pthread_mutex_t * getMutexLockPtr()$/;"	f	class:wd::MutexLock
+isRunning	Thread.h	/^	bool isRunning() const {	return _isRunning;	}$/;"	f	class:wd::Thread
+join	Thread.cc	/^void Thread::join()$/;"	f	class:Thread
+lock	MutexLock.h	/^	void lock()$/;"	f	class:wd::MutexLock
+main	TestThread.cc	/^int main(void)$/;"	f
+notify	Condition.h	/^	void notify()$/;"	f	class:wd::Condition
+notifyAll	Condition.h	/^	void notifyAll()$/;"	f	class:wd::Condition
+pop	TaskQueue.cc	/^Task TaskQueue::pop()$/;"	f	class:TaskQueue
+produce	TestThread.cc	/^void produce(TaskQueue & tq){$/;"	f
+produceNumber	TestThread.cc	/^	void produceNumber(TaskQueue & tq){$/;"	f	struct:Producer
+push	TaskQueue.cc	/^void TaskQueue::push(const Task & t)$/;"	f	class:TaskQueue
+start	Thread.cc	/^void Thread::start()$/;"	f	class:Thread
+threadFunc	Thread.cc	/^void * Thread::threadFunc(void * arg)$/;"	f	class:Thread
+unlock	MutexLock.h	/^	void unlock()$/;"	f	class:wd::MutexLock
+wait	Condition.h	/^	void wait() $/;"	f	class:wd::Condition
+wd	Condition.h	/^namespace wd$/;"	n
+wd	MutexLock.h	/^namespace wd$/;"	n
+wd	Noncopyable.h	/^namespace wd$/;"	n
+wd	TaskQueue.h	/^namespace wd$/;"	n
+wd	Thread.h	/^namespace wd$/;"	n
+~Condition	Condition.h	/^	~Condition()$/;"	f	class:wd::Condition
+~MutexLock	MutexLock.h	/^	~MutexLock()$/;"	f	class:wd::MutexLock
+~MutexLockGuard	MutexLock.h	/^	~MutexLockGuard()$/;"	f	class:wd::MutexLockGuard
+~Noncopyable	Noncopyable.h	/^	~Noncopyable(){}$/;"	f	class:wd::Noncopyable
+~Thread	Thread.cc	/^Thread::~Thread()$/;"	f	class:Thread

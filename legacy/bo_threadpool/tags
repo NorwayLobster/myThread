@@ -1,0 +1,92 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/ec7b647/
+$(TARGET)	Makefile	/^$(TARGET):$(CPP_FILE)$/;"	t
+CC	Makefile	/^CC := g++$/;"	m
+CPP_FILE	Makefile	/^CPP_FILE :=  $(wildcard *.cc)$/;"	m
+Condition	Condition.h	/^	Condition(MutexLock & mutex)$/;"	f	class:wd::Condition
+Condition	Condition.h	/^class Condition$/;"	c	namespace:wd
+INC_DIR	Makefile	/^INC_DIR :=  .\/$/;"	m
+INC_FILE	Makefile	/^INC_FILE := $(addprefix -I, $(INC_DIR))$/;"	m
+LIBS	Makefile	/^LIBS :=  -lpthread$/;"	m
+MutexLock	MutexLock.h	/^	MutexLock()$/;"	f	class:wd::MutexLock
+MutexLock	MutexLock.h	/^class MutexLock$/;"	c	namespace:wd
+MutexLockGuard	MutexLock.h	/^	MutexLockGuard(MutexLock & mutex)$/;"	f	class:wd::MutexLockGuard
+MutexLockGuard	MutexLock.h	/^class MutexLockGuard$/;"	c	namespace:wd
+MyTask	TestThreadpool.cc	/^class MyTask$/;"	c	file:
+Noncopyable	Noncopyable.h	/^	Noncopyable(){}$/;"	f	class:wd::Noncopyable
+Noncopyable	Noncopyable.h	/^class Noncopyable$/;"	c	namespace:wd
+SRC_DIR	Makefile	/^SRC_DIR = .\/$/;"	m
+TARGET	Makefile	/^TARGET := a.out$/;"	m
+Task	TaskQueue.h	/^typedef std::function<void()> Task;$/;"	t	namespace:wd
+Task	Threadpool.h	/^	using Task = std::function<void()>;$/;"	t	class:wd::Threadpool
+TaskQueue	TaskQueue.h	/^	TaskQueue(size_t queSize)$/;"	f	class:wd::TaskQueue
+TaskQueue	TaskQueue.h	/^class TaskQueue$/;"	c	namespace:wd
+Thread	Thread.cc	/^Thread::Thread(ThreadCallback && cb)$/;"	f	class:Thread
+Thread	Thread.h	/^class Thread$/;"	c	namespace:wd
+ThreadCallback	Thread.h	/^	using ThreadCallback = function<void()>;$/;"	t	class:wd::Thread
+Threadpool	Threadpool.h	/^	Threadpool(size_t threadNum, size_t queSize)$/;"	f	class:wd::Threadpool
+Threadpool	Threadpool.h	/^class Threadpool$/;"	c	namespace:wd
+__WD_CONDITION_H__	Condition.h	/^#define __WD_CONDITION_H__$/;"	d
+__WD_MUTEXLOCK_H__	MutexLock.h	/^#define __WD_MUTEXLOCK_H__$/;"	d
+__WD_NONCOPYABLE_H__	Noncopyable.h	/^#define __WD_NONCOPYABLE_H__$/;"	d
+__WD_TASKQUEUE_H__	TaskQueue.h	/^#define __WD_TASKQUEUE_H__$/;"	d
+__WD_THREADPOOL_H__	Threadpool.h	/^#define __WD_THREADPOOL_H__$/;"	d
+__WD_THREAD_H__	Thread.h	/^#define __WD_THREAD_H__$/;"	d
+_cb	Thread.h	/^	ThreadCallback _cb;$/;"	m	class:wd::Thread	typeref:typename:ThreadCallback
+_cond	Condition.h	/^	pthread_cond_t _cond;$/;"	m	class:wd::Condition	typeref:typename:pthread_cond_t
+_flag	TaskQueue.h	/^	bool _flag;$/;"	m	class:wd::TaskQueue	typeref:typename:bool
+_isExit	Threadpool.h	/^	bool _isExit;$/;"	m	class:wd::Threadpool	typeref:typename:bool
+_isRunning	Thread.h	/^	bool _isRunning;$/;"	m	class:wd::Thread	typeref:typename:bool
+_mutex	Condition.h	/^	MutexLock & _mutex;$/;"	m	class:wd::Condition	typeref:typename:MutexLock &
+_mutex	MutexLock.h	/^	MutexLock & _mutex;$/;"	m	class:wd::MutexLockGuard	typeref:typename:MutexLock &
+_mutex	MutexLock.h	/^	pthread_mutex_t _mutex;$/;"	m	class:wd::MutexLock	typeref:typename:pthread_mutex_t
+_mutex	TaskQueue.h	/^	MutexLock _mutex;$/;"	m	class:wd::TaskQueue	typeref:typename:MutexLock
+_notEmpty	TaskQueue.h	/^	Condition _notEmpty;$/;"	m	class:wd::TaskQueue	typeref:typename:Condition
+_notFull	TaskQueue.h	/^	Condition _notFull;$/;"	m	class:wd::TaskQueue	typeref:typename:Condition
+_pthid	Thread.h	/^	pthread_t _pthid;$/;"	m	class:wd::Thread	typeref:typename:pthread_t
+_que	TaskQueue.h	/^	std::queue<Task> _que;$/;"	m	class:wd::TaskQueue	typeref:typename:std::queue<Task>
+_queSize	TaskQueue.h	/^	size_t _queSize;$/;"	m	class:wd::TaskQueue	typeref:typename:size_t
+_queSize	Threadpool.h	/^	size_t _queSize;$/;"	m	class:wd::Threadpool	typeref:typename:size_t
+_taskQue	Threadpool.h	/^	TaskQueue _taskQue;$/;"	m	class:wd::Threadpool	typeref:typename:TaskQueue
+_threadNum	Threadpool.h	/^	size_t _threadNum;$/;"	m	class:wd::Threadpool	typeref:typename:size_t
+_threads	Threadpool.h	/^	vector<shared_ptr<Thread> > _threads;$/;"	m	class:wd::Threadpool	typeref:typename:vector<shared_ptr<Thread>>
+addTask	Threadpool.cc	/^void Threadpool::addTask(Task && task)$/;"	f	class:Threadpool	typeref:typename:void
+clean	Makefile	/^clean:$/;"	t
+empty	TaskQueue.h	/^	bool empty() const$/;"	f	class:wd::TaskQueue	typeref:typename:bool
+full	TaskQueue.h	/^	bool full()const$/;"	f	class:wd::TaskQueue	typeref:typename:bool
+getMutexLockPtr	MutexLock.h	/^	pthread_mutex_t * getMutexLockPtr()$/;"	f	class:wd::MutexLock	typeref:typename:pthread_mutex_t *
+getTask	Threadpool.cc	/^Task Threadpool::getTask()$/;"	f	class:Threadpool	typeref:typename:Task
+isRunning	Thread.h	/^	bool isRunning() const {	return _isRunning;	}$/;"	f	class:wd::Thread	typeref:typename:bool
+join	Thread.cc	/^void Thread::join()$/;"	f	class:Thread	typeref:typename:void
+lock	MutexLock.h	/^	void lock()$/;"	f	class:wd::MutexLock	typeref:typename:void
+main	TestThreadpool.cc	/^int main(void)$/;"	f	typeref:typename:int
+notify	Condition.h	/^	void notify()$/;"	f	class:wd::Condition	typeref:typename:void
+notifyAll	Condition.h	/^	void notifyAll()$/;"	f	class:wd::Condition	typeref:typename:void
+pop	TaskQueue.cc	/^Task TaskQueue::pop()$/;"	f	class:TaskQueue	typeref:typename:Task
+process	TestThreadpool.cc	/^	void process()$/;"	f	class:MyTask	typeref:typename:void	file:
+push	TaskQueue.cc	/^void TaskQueue::push(Task && task)$/;"	f	class:TaskQueue	typeref:typename:void
+start	Thread.cc	/^void Thread::start()$/;"	f	class:Thread	typeref:typename:void
+start	Threadpool.cc	/^void Threadpool::start()$/;"	f	class:Threadpool	typeref:typename:void
+stop	Threadpool.cc	/^void Threadpool::stop()$/;"	f	class:Threadpool	typeref:typename:void
+threadFunc	Thread.cc	/^void * Thread::threadFunc(void * arg)$/;"	f	class:Thread	typeref:typename:void *
+threadFunc	Threadpool.cc	/^void Threadpool::threadFunc()$/;"	f	class:Threadpool	typeref:typename:void
+unlock	MutexLock.h	/^	void unlock()$/;"	f	class:wd::MutexLock	typeref:typename:void
+wait	Condition.h	/^	void wait() $/;"	f	class:wd::Condition	typeref:typename:void
+wakeup	TaskQueue.h	/^	void wakeup() {$/;"	f	class:wd::TaskQueue	typeref:typename:void
+wd	Condition.h	/^namespace wd$/;"	n
+wd	MutexLock.h	/^namespace wd$/;"	n
+wd	Noncopyable.h	/^namespace wd$/;"	n
+wd	TaskQueue.h	/^namespace wd$/;"	n
+wd	Thread.h	/^namespace wd$/;"	n
+wd	Threadpool.h	/^namespace wd$/;"	n
+~Condition	Condition.h	/^	~Condition()$/;"	f	class:wd::Condition
+~MutexLock	MutexLock.h	/^	~MutexLock()$/;"	f	class:wd::MutexLock
+~MutexLockGuard	MutexLock.h	/^	~MutexLockGuard()$/;"	f	class:wd::MutexLockGuard
+~Noncopyable	Noncopyable.h	/^	~Noncopyable(){}$/;"	f	class:wd::Noncopyable
+~Thread	Thread.cc	/^Thread::~Thread()$/;"	f	class:Thread
+~Threadpool	Threadpool.cc	/^Threadpool::~Threadpool()$/;"	f	class:Threadpool
