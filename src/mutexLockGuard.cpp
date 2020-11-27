@@ -7,8 +7,8 @@
 //
 
 
-#include "myThread/mutexLockGuard.hpp"
-#include "myThread/mutex.hpp"
+#include "threadpool/mutexLockGuard.hpp"
+#include "threadpool/mutex.hpp"
 #include <iostream>
 using std::cout;
 using std::endl;

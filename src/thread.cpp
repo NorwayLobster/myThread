@@ -6,7 +6,7 @@
 //  Copyright © 2019 ChengWangMacPro15.4. All rights reserved.
 //
 
-#include "myThread/thread.hpp"
+#include "threadpool/thread.hpp"
 #include "pthread.h"
 #include <iostream>
 using std::cout;

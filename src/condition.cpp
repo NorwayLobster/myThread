@@ -6,8 +6,8 @@
 //  Copyright © 2019 ChengWangMacPro15.4. All rights reserved.
 //
 
-#include "myThread/condition.hpp"
-#include "myThread/mutex.hpp"
+#include "threadpool/condition.hpp"
+#include "threadpool/mutex.hpp"
 //如果没加mutex.h头文件
 /* condition.cpp: In member function ‘void Condition::wait(MutexLock&)’:
  condition.cpp:25:32: error: invalid use of incomplete type ‘class MutexLock’

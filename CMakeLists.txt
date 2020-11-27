@@ -1,6 +1,5 @@
 cmake_minimum_required( VERSION 3.5)
-project(myThread)
-# add_subdirectory(examples)//cmake .. still error
+project(threadpool)
 set(SOURCES 
       src/condition.cpp
       src/mutex.cpp
@@ -11,7 +10,7 @@ set(SOURCES
 )
 
 add_library( ${PROJECT_NAME}  SHARED ${SOURCES})
-add_library( sub::myThread ALIAS ${PROJECT_NAME} )
+add_library( sub::threadpool ALIAS ${PROJECT_NAME} )
 target_include_directories(${PROJECT_NAME}
     PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
@@ -28,8 +27,10 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
     ${Boost_SYSTEM_LIBRARY}
     ${Boost_FILESYSTEM_LIBRARY}
+    pthread
 )
 
+add_subdirectory(examples) #//cmake .. still error
 
 
 if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )

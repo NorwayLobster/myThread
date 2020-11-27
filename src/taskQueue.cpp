@@ -6,8 +6,8 @@
 //  Copyright © 2019 ChengWangMacPro15.4. All rights reserved.
 //
 
-#include "myThread/taskQueue.hpp"
-#include "myThread/mutexLockGuard.hpp"
+#include "threadpool/taskQueue.hpp"
+#include "threadpool/mutexLockGuard.hpp"
 template<typename T>
 taskQueue<T>::taskQueue(size_t queSize):
 __queSize(queSize),
