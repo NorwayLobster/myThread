@@ -8,13 +8,13 @@
 
 #ifndef taskQueue_hpp
 #define taskQueue_hpp
-#include "mutex.hpp"
-#include "condition.hpp"
+#include "threadpool/mutex.hpp"
+#include "threadpool/condition.hpp"
 
 #include <iostream>
 #include <queue>
 #include <memory>
-#include <boost/noncopyable.hpp>
+// #include <boost/noncopyable.hpp>
 using std::cout;
 using std::endl;
 using std::queue;
@@ -23,10 +23,11 @@ using std::shared_ptr;
 //using Task = std::function<void()>;
 //using Task = int;
 template<typename T>
-class taskQueue:boost::noncopyable
-{
+// class taskQueue:boost::noncopyable
+class taskQueue{
 public:
     taskQueue(size_t queSize);
+    taskQueue(const taskQueue&)=delete;
     ~taskQueue();
     bool empty();
     bool full();

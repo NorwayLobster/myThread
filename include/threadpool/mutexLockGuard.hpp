@@ -8,7 +8,7 @@
 
 #ifndef MutexLockGuard_hpp
 #define MutexLockGuard_hpp
-#include <boost/noncopyable.hpp>
+// #include <boost/noncopyable.hpp>
 
 #include <stdio.h>
 class MutexLock;

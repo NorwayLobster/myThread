@@ -8,13 +8,15 @@
 
 #include <pthread.h>
 //#include "Noncopyable.h"
-#include <boost/noncopyable.hpp>
+// #include <boost/noncopyable.hpp>
 #ifndef mutex_h
 #define mutex_h
 
-class MutexLock:boost::noncopyable {
+// class MutexLock:boost::noncopyable {
+class MutexLock{
 public:
     MutexLock();
+    MutexLock(const MutexLock&);
     ~MutexLock();
     void lock();
     void unlock();

@@ -15,22 +15,23 @@ target_include_directories(${PROJECT_NAME}
     PUBLIC ${PROJECT_SOURCE_DIR}/include
 )
 
-find_package(Boost 1.46.1 REQUIRED COMPONENTS filesystem system)
+#  find_package(Boost 1.46.1 REQUIRED COMPONENTS filesystem system)
+#  find_package(Boost 1.71.0 REQUIRED COMPONENTS filesystem system)
 
 # Include the boost headers
-target_include_directories( ${PROJECT_NAME}
-    PRIVATE ${Boost_INCLUDE_DIRS}
-)
+#  target_include_directories( ${PROJECT_NAME} PRIVATE ${Boost_INCLUDE_DIRS})
 
 # link against the boost libraries
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-    ${Boost_SYSTEM_LIBRARY}
-    ${Boost_FILESYSTEM_LIBRARY}
+    # boost::filesystem
+    # boost::system
+    # ${Boost_SYSTEM_LIBRARY}
+    # ${Boost_FILESYSTEM_LIBRARY}
     pthread
 )
 
-add_subdirectory(examples) #//cmake .. still error
+# add_subdirectory(examples) #//cmake .. still error
 
 
 if( CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT )

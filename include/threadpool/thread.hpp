@@ -9,15 +9,17 @@
 #ifndef thread_hpp
 #define thread_hpp
 //#include "Nocopyable"
-#include <boost/noncopyable.hpp>
+// #include <boost/noncopyable.hpp>
 #include <stdio.h>
 #include <pthread.h>
 #include <functional>
 using std::function;
-class Thread:public boost::noncopyable{
+// class Thread:public boost::noncopyable{
+class Thread{
     using ThreadCallback = std::function<void()>;
 public:
     Thread(ThreadCallback);
+    Thread(const Thread&)=delete;
     ~Thread();
     void start();
     void join();

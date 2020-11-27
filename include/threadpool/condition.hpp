@@ -12,11 +12,13 @@
 #include <stdio.h>
 #include <pthread.h>
 //#include "Noncopyable.h"
-#include <boost/noncopyable.hpp>
+// #include <boost/noncopyable.hpp>
 class MutexLock;
-class Condition:boost::noncopyable{
+// class Condition:boost::noncopyable{
+class Condition{
 public:
     Condition();
+    Condition(const Condition&)=delete;
     ~Condition();
     void wait(MutexLock & mutex);
     void notify();

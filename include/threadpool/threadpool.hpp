@@ -8,8 +8,8 @@
 #include <vector>
 #include <memory>
 #include <functional>
-#include "myThread/taskQueue.hpp"
-#include "myThread/thread.hpp"
+#include "threadpool/taskQueue.hpp"
+#include "threadpool/thread.hpp"
 
 using std::vector;
 using std::shared_ptr;
